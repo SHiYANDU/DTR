@@ -8,6 +8,9 @@ public enum Command {
 	Abort("Abort a transaction with xid", "<xid>"),
 	Shutdown("Quit all the servers", ""),
 
+	ResetCrashes("Reset crash mode",""),
+	CrashMiddleware("Middleware crash mode","<mode>"),
+	CrashResourceManager("RM crash mode","<name>,<mode>"),
 	AddFlight("Add a new flight number", "<xid>,<FlightNumber>,<NumberOfSeats>,<PricePerSeat>"),
 	AddCars("Add a new car location", "<xid>,<Location>,<NumberOfCar>,<Price>"),
 	AddRooms("Add a new room location", "<xid>,<Location>,<NumberOfRoom>,<Price>"),
